@@ -17,7 +17,8 @@ defmodule PruebaElixirPhoenixWeb.Router do
   scope "/", PruebaElixirPhoenixWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    #get "/", PageController, :home
+    live "/", ApiMetereologicaLive, :index
   end
 
   # Other scopes may use custom stacks.
